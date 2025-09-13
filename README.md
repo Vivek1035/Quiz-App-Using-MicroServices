@@ -27,4 +27,7 @@ flowchart TD
     A[Client / Postman / Frontend] --> B[API Gateway]
     B --> C[Question Service]
     B --> D[Quiz Service]
-    C & D --> E[Service Registry (Eureka)]
+    C --> E[Service Registry (Eureka)]
+    D --> E
+```
+
