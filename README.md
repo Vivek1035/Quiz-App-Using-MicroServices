@@ -22,29 +22,9 @@ This project demonstrates service discovery, API gateway, and communication betw
 
 ## 🏗️ Architecture
 
+```mermaid
 flowchart TD
     A[Client / Postman / Frontend] --> B[API Gateway]
     B --> C[Question Service]
     B --> D[Quiz Service]
     C & D --> E[Service Registry (Eureka)]
-
- ---
-
-📂 Project Structure
-Quiz-App-Using-MicroServices/
-│
-├── api-gateway/            # API Gateway for routing
-├── question-service-ms/    # Manages questions
-├── quiz-service-ms/        # Manages quiz creation & evaluation
-└── service-registry/       # Eureka Server for discovery
-
----
-
-⚙️ Tech Stack
-Java 17+
-Spring Boot 3
-Spring Cloud Netflix Eureka
-Spring Cloud Gateway
-Maven
-REST API
-
